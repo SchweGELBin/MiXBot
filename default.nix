@@ -30,8 +30,8 @@ rustNightly.buildRustPackage (finalAttrs: {
 
   meta = {
     description = "Minecraft MiXBot";
-    homepage = "https://github.com/SchweGELBin/MC-MiXBot";
-    changelog = "https://github.com/SchweGELBin/MC-MiXBot/blob/v${finalAttrs.version}/docs/CHANGELOG.md";
+    homepage = "https://github.com/SchweGELBin/MiXBot";
+    changelog = "https://github.com/SchweGELBin/MiXBot/blob/v${finalAttrs.version}/docs/CHANGELOG.md";
     license = lib.licenses.mit;
     mainProgram = finalAttrs.pname;
     maintainers = with lib.maintainers; [ SchweGELBin ];
