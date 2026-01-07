@@ -5,7 +5,7 @@
 
 - Minecraft MiXBot
 - Available in my [nur expressions](https://github.com/SchweGELBin/nur-expressions) repo
-- This bot is very experimental and should not be used in the current state
+- **This bot is very experimental and should not be used in the current state**
 
 ## Environment
 The Bot needs following environment variables to function:
