@@ -23,6 +23,8 @@ The Bot needs following environment variables to function:
 - "\<arg\>" -> Optional Argument
 
 ### Discord
+Disabled if MIXBOT_DISCORD_TOKEN is unset or empty
+
 | Command | Arguments     | Description                        |
 | ------- | ---------     | -----------                        |
 | help    | \<command\>   | Show command information           |
@@ -40,8 +42,6 @@ The Bot needs following environment variables to function:
 | follow  | \<name\>      | Follow a player               |
 | goto    | [x] \<y\> [z] | Goto coordinates              |
 | guard   | \<mob\>       | Attack (specific) nearby mobs |
+| msg     | [message]     | Send Message to discord chat  |
 | stop    | -             | Stop the current action       |
 | tp      | -             | Close the nearest trapdoor    |
-
-### Extra
-Minecraft: "/msg [bot] [msg]" -> Bridge to Discord
