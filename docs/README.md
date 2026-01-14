@@ -25,9 +25,6 @@ The Bot needs following environment variables to function:
 ### Discord
 | Command | Arguments     | Description                        |
 | ------- | ---------     | -----------                        |
-| fight   | [player]      | Fight a player                     |
-| goto    | [x] \<y\> [z] | Goto coordinates                   |
-| guard   | \<mob\>       | Attack (specific) nearby mobs      |
 | help    | \<command\>   | Show command information           |
 | join    | -             | Join the Server                    |
 | leave   | -             | Leave the Server                   |
@@ -37,11 +34,14 @@ The Bot needs following environment variables to function:
 | version | -             | Give the current Bot version       |
 
 ### Minecraft
-| Command | Arguments | Description                |
-| ------- | --------- | -----------                |
-| follow  | \<name\>  | Follow a player            |
-| stop    | -         | Stop the current action    |
-| tp      | -         | Close the nearest trapdoor |
+| Command | Arguments     | Description                   |
+| ------- | ---------     | -----------                   |
+| fight   | [player]      | Fight a player                |
+| follow  | \<name\>      | Follow a player               |
+| goto    | [x] \<y\> [z] | Goto coordinates              |
+| guard   | \<mob\>       | Attack (specific) nearby mobs |
+| stop    | -             | Stop the current action       |
+| tp      | -             | Close the nearest trapdoor    |
 
 ### Extra
 Minecraft: "/msg [bot] [msg]" -> Bridge to Discord
