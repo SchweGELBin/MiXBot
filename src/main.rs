@@ -77,7 +77,7 @@ async fn handle(bot: Client, event: azalea::Event, state: State) -> anyhow::Resu
         }
         azalea::Event::Chat(chat) => {
             let (Some(username), content) = chat.split_sender_and_content() else { return Ok(()); };
-            if username != swarm.args.owner { return Ok(()); };
+            if !swarm.args.owner.is_empty() && username != swarm.args.owner { return Ok(()); };
 
             let command = if chat.is_whisper() { Some(content) } else { content.strip_prefix(swarm.args.prefix).map(|s| s.to_owned()) };
             if let Some(command) = command {
@@ -135,7 +135,7 @@ pub struct Args {
 fn parse_args() -> Args {
     let mut accounts = parse_accounts(var("MIXBOT_ACCOUNTS").unwrap_or("MiXBot,false".to_string()));
     let mut host = var("MIXBOT_HOST").unwrap_or("localhost".to_string());
-    let mut owner = var("MIXBOT_OWNER").unwrap_or("SchweGELBin".to_string());
+    let mut owner = var("MIXBOT_OWNER").unwrap_or(String::new());
     let mut prefix = var("MIXBOT_PREFIX").unwrap_or("!".to_string());
 
     let mut args = args().skip(1);
