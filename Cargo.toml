@@ -7,8 +7,6 @@ version = "0.3.1"
 
 [dependencies]
 anyhow = "^1.0"
-azalea = "^0.13"
+azalea = { version = "^0.15", git = "https://github.com/azalea-rs/azalea"}
 parking_lot = "^0.12"
-poise = "^0.6"
-tokio = { version = "^1.46", features = ["macros", "rt-multi-thread"] }
-tracing-subscriber = "^0.3"
+tokio = { version = "^1.50", features = ["macros", "rt-multi-thread"] }

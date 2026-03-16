@@ -8,15 +8,16 @@
 - **This bot is very experimental and should not be used in the current state**
 
 ## Environment
-The Bot needs following environment variables to function:
-| Variable              | Description                     | Default   |
-| --------              | -----------                     | -------   |
-| MIXBOT_DISCORD_ID     | Your Discord User ID            | -         |
-| MIXBOT_DISCORD_PREFIX | Your Discord Bot Command Prefix | !         |
-| MIXBOT_DISCORD_TOKEN  | Your Discord Bot Token          | -         |
-| MIXBOT_HOST           | Your Server IP                  | localhost |
-| MIXBOT_NAME           | Your Bot's Name                 | MiXBot    |
-| MIXBOT_ONLINE         | Authenticate with Microsoft     | false     |
+The Bot needs following environment variables or flags to function:
+| Variable              | Flag           | Description                     | Default      |
+| --------              | ----           | -----------                     | -------      |
+| MIXBOT_ACCOUNTS       | -A, --accounts | Your Bot's Name + Auth Mode     | MiXBot,false |
+| MIXBOT_HOST           | -H, --hosts    | Your Server IP                  | localhost    |
+| MIXBOT_OWNER          | -O, --owner    | Your Bot's Owner Name           | SchweGELBin  |
+| MIXBOT_PREFIX         | -P, --prefix   | Your Bot's Command Prefix       | !            |
+| MIXBOT_DISCORD_ID     | --dcid         | Your Discord User ID            | -            |
+| MIXBOT_DISCORD_PREFIX | --dcprefix     | Your Discord Bot Command Prefix | !            |
+| MIXBOT_DISCORD_TOKEN  | --dctoken      | Your Discord Bot Token          | -            |
 
 ## Commands
 - "[arg]" -> Necessary Argument
