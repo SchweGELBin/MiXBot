@@ -2,7 +2,7 @@
 authors = ["SchweGELBin <schwegelbin@gmail.com>"]
 edition = "2024"
 name = "mixbot"
-version = "0.3.1"
+version = "1.0.0"
 
 
 [dependencies]

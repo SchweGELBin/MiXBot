@@ -23,10 +23,10 @@ in
 
 rustNightly.buildRustPackage (finalAttrs: {
   pname = "mixbot";
-  version = "0.3.1";
+  version = "1.0.0";
 
   src = ./.;
-  cargoHash = "sha256-O6R0ARu/9v4bp5XdF6wk8ePwcWAAkC/MkyUgbEfzzes=";
+  cargoHash = "sha256-UGsFrbAZVDhEXbXfad4Q3mB5eTqsN54jF5D1fliv73Q=";
 
   meta = {
     description = "Minecraft MiXBot";

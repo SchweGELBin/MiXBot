@@ -2,11 +2,43 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.0.0] - 2026-03-16
+
+### 🚀 Features
+
+- Allow not specifying an owner
+- Implement discord bot
+
+### 🚜 Refactor
+
+- [**breaking**] Redesign everything
+
+### 📚 Documentation
+
+- *(license)* Update copyright year
+- *(readme)* Highlight experimental status
+- *(readme)* Move some commands from discord to minecraft
+- *(readme)* Disable discord if token unset; move extra.msg to minecraft
+
+### 🎨 Styling
+
+- *(nix)* Cleanup default.nix
+- *(readme)* Format tables
+
+### ⚙️ Miscellaneous Tasks
+
+- *(nix)* Update homepage and changelog url
+- *(nix)* Update locks and hashes
+
 ## [0.3.1] - 2025-07-17
 
 ### 🐛 Bug Fixes
 
 - *(nix)* Specify fenix version
+
+### ⚙️ Miscellaneous Tasks
+
+- Bump to 0.3.1
 
 ## [0.3.0] - 2025-07-16
 
