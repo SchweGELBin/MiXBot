@@ -1,7 +1,7 @@
 {
   fenix ? import (fetchTarball {
-    url = "https://github.com/nix-community/fenix/archive/f1526533e3a59a666dbae99594c9d29b201f302d.tar.gz";
-    sha256 = "0gw1095ss53pfqhniq2wvg8wr340k830wpbjlmaq5jga18vkp21q";
+    url = "https://github.com/nix-community/fenix/archive/47c5355eaba0b08836e720d5d545c8ea1e1783db.tar.gz";
+    sha256 = "0a52hq3nlacbzzkqfdszyg1syygypk1q7cljfrr134mqnfrqma3i";
   }) { },
   lib,
   pkgs,
@@ -26,7 +26,7 @@ rustNightly.buildRustPackage (finalAttrs: {
   version = "0.3.1";
 
   src = ./.;
-  cargoLock.lockFile = ./Cargo.lock;
+  cargoHash = "sha256-O6R0ARu/9v4bp5XdF6wk8ePwcWAAkC/MkyUgbEfzzes=";
 
   meta = {
     description = "Minecraft MiXBot";
