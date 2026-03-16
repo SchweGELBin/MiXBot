@@ -1,5 +1,5 @@
 mod idle;
-use crate::State;
+use crate::minecraft::State;
 use azalea::Client;
 
 #[derive(Clone, Copy, Debug, Default, Eq, PartialEq)]

@@ -8,7 +8,7 @@ pub fn register(commands: &mut CommandDispatcher<Mutex<CommandSource>>) {
             .executes(|ctx: &Ctx| {
                 let source = ctx.source.lock();
                 source.bot.jump();
-                source.reply("ok");
+                source.reply("OK");
                 1
             })
             .then(argument("enabled", bool()).executes(|ctx: &Ctx| {

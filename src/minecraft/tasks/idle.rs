@@ -1,4 +1,4 @@
-use crate::State;
+use crate::minecraft::State;
 use azalea::{
     core::game_type::GameMode,
     ecs::prelude::*,

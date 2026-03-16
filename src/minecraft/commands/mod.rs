@@ -1,5 +1,5 @@
 mod movement;
-use crate::State;
+use crate::minecraft::State;
 use azalea::{
     brigadier::prelude::*, chat::ChatPacket, ecs::prelude::*, entity::metadata::Player,
     player::GameProfileComponent, Client,
