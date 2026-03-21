@@ -26,7 +26,10 @@ rustNightly.buildRustPackage (finalAttrs: {
   version = "1.0.0";
 
   src = ./.;
-  cargoHash = "sha256-UGsFrbAZVDhEXbXfad4Q3mB5eTqsN54jF5D1fliv73Q=";
+  cargoLock = {
+    allowBuiltinFetchGit = true;
+    lockFile = ./Cargo.lock;
+  };
 
   meta = {
     description = "Minecraft MiXBot";
